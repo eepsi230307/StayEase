@@ -1,0 +1,388 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+  color: #1e40af;
+  line-height: 1.1;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.explore-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   COMMON SECTION STYLING
+========================= */
+
+.services-section,
+.featured-hotels-section,
+.how-it-works,
+.why-section,
+.faq-section {
+  padding: 70px 8%;
+}
+
+.services-section h2,
+.featured-hotels-section h2,
+.how-it-works h2,
+.why-section h2,
+.faq-section h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #1e40af;
+  margin-bottom: 40px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FEATURED HOTELS
+========================= */
+
+.featured-hotels-section {
+  background: #ffffff;
+}
+
+.featured-hotels-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.featured-hotel-card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+  height: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured-hotel-card h3 {
+  font-size: 25px;
+  color: #1e40af;
+  margin-bottom: 15px;
+}
+
+.featured-hotel-card p {
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+
+/* BUTTON ALIGNMENT */
+
+.featured-hotel-card .view-rooms-btn {
+  margin-top: auto;
+  align-self: stretch;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   VIEW ROOMS BUTTON
+========================= */
+
+.view-rooms-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-rooms-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-it-works {
+  background: #f5f7fb;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.step-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.step-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.step-card h3 {
+  color: #1e40af;
+  margin-bottom: 12px;
+}
+
+.step-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-section {
+  background: #ffffff;
+  text-align: center;
+}
+
+.why-section p {
+  max-width: 700px;
+  margin: auto;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section {
+  background: #f5f7fb;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  background: white;
+  margin-bottom: 15px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 17px;
+}
+
+.faq-item p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE - 900px
+========================= */
+
+@media (max-width: 900px) {
+
+  .services-container,
+  .featured-hotels-container,
+  .steps-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE - 700px
+========================= */
+
+@media (max-width: 700px) {
+
+  .services-container,
+  .featured-hotels-container,
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section,
+  .featured-hotels-section,
+  .how-it-works,
+  .why-section,
+  .faq-section {
+    padding: 50px 5%;
+  }
+
+  .hero-section {
+    min-height: 450px;
+    padding: 50px 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+  }
+
+  .services-section h2,
+  .featured-hotels-section h2,
+  .how-it-works h2,
+  .why-section h2,
+  .faq-section h2 {
+    font-size: 28px;
+  }
+}
+
+
+/* =========================
+   RESPONSIVE - 450px
+========================= */
+
+@media (max-width: 450px) {
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .explore-btn {
+    width: 100%;
+  }
+
+  .featured-hotel-card,
+  .service-card,
+  .step-card {
+    padding: 25px;
+  }
+}

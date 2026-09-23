@@ -1,0 +1,129 @@
+.my-bookings-page {
+  min-height: 70vh;
+  padding: 60px 8%;
+  background: #f5f7fb;
+}
+
+.my-bookings-page h1 {
+  text-align: center;
+  font-size: 38px;
+  color: #1e40af;
+  margin-bottom: 40px;
+}
+
+.bookings-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.booking-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: 100%;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card h2 {
+  color: #1e40af;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+.booking-card p {
+  color: #475569;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Total Amount */
+
+.booking-card p strong {
+  color: #2563eb;
+  font-size: 17px;
+}
+
+/* Cancel Button */
+
+.cancel-booking-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #ef4444;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-booking-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* Message */
+
+.booking-message {
+  max-width: 600px;
+  margin: 0 auto 25px;
+
+  padding: 12px 18px;
+
+  text-align: center;
+
+  background: #dcfce7;
+  color: #166534;
+
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Empty State */
+
+.my-bookings-page > p {
+  text-align: center;
+  color: #64748b;
+  font-size: 17px;
+}
+
+/* Tablet */
+
+@media (max-width: 850px) {
+  .bookings-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .my-bookings-page {
+    padding: 45px 5%;
+  }
+
+  .my-bookings-page h1 {
+    font-size: 30px;
+  }
+
+  .booking-card {
+    padding: 25px;
+  }
+}

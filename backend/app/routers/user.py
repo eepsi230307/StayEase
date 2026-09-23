@@ -8,7 +8,7 @@ from app.database import get_db
 from app.models.user import User
 from app.schemas.user import UserCreate, UserLogin, UserProfileResponse, UserProfileUpdate
 from app.utils.password import get_password_hash, verify_password
-from app.utils.token import create_access_token, get_current_user
+from app.utils.token import create_access_token, get_current_user, get_current_admin
 
 
 router = APIRouter()
@@ -107,4 +107,20 @@ def update_profile(
     db.refresh(current_user)
 
     return current_user
+@router.get("/admin/users")
+def get_all_users(
+    db: Session = Depends(get_db),
+    current_admin: User = Depends(get_current_admin)
+):
+    users = db.query(User).all()
+
+    return [
+        {
+            "id": user.id,
+            "name": user.name,
+            "email": user.email,
+            "role": user.role
+        }
+        for user in users
+    ]
 
